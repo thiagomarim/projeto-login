@@ -15,6 +15,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: linear-gradient(to right, #5a84f7, #3d5ff8);
+    padding: 1.5rem;
 }
 
 .main-card {
