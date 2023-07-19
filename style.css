@@ -15,7 +15,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: linear-gradient(to right, #5a84f7, #3d5ff8);
-    padding: 1.5rem;
+    padding: 0px 1.5rem;
 }
 
 .main-card {
@@ -39,7 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px 0px 40px 0px;
+    margin: 0px;
     background-color: white;
     padding: 30px;
     border-radius: 20px;
@@ -81,18 +81,24 @@ form div input:focus {
     align-items: center;
 }
 
-.cadastrar button {
+.cadastrar input {
     background-color: #2b64ff;
     border: none;
     width: 150px;
     height: 50px;
     border-radius: 15px;
     color: #fff;
+    padding-right: 15px;
     font-size: 16px;
     margin-bottom: 20px;
 }
 
-.cadastrar button:hover {
+.cadastrar a {
+    text-decoration: none;
+    color: #2b64ff;
+}
+
+.cadastrar input:hover {
     background-color: #1b2f68;
     transition: 0.3s;
 }
@@ -119,4 +125,109 @@ form div input:focus {
 .btn-cadastro button:hover {
     background-color: #1b2f68;
     transition: 0.3s;
+}
+
+.socials-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.socials-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 22px;
+    color: white;
+    margin-top: 60px;
+    transition: scale .2s;
+}
+
+.facebook {
+    background-color: #2b64ff;
+}
+
+.twitter {
+    background-color: #55acee;
+}
+
+.github {
+    background-color: #111f;
+}
+
+.socials-buttons a:hover {
+    scale: .95;
+}
+
+.right-card .socials2 {
+    display: none;
+}
+
+
+/* Responsividade */
+
+@media (max-width:992px) {
+    .main-card{
+        width: 500px;
+        height: 800px;
+        padding: 0px 0px 0px 0px;
+        margin: 1rem;
+    }
+
+    .right-card {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 40px 0px 40px 0px;
+    }
+
+    .right-card .socials2 {
+        display: block;
+        display: flex;
+        gap: 1rem;
+        padding: 0px 50px 0px 89px;
+    }
+
+    .socials2 {
+        
+    }
+
+    .socials2 a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        font-size: 22px;
+        color: white;
+        margin-top: 60px;
+        transition: scale .2s;
+    }
+
+    .facebook {
+        background-color: #2b64ff;
+    }
+    
+    .twitter {
+        background-color: #55acee;
+    }
+    
+    .github {
+        background-color: #111f;
+    }
+    
+    .socials2 a:hover {
+        scale: .95;
+    }
+    
+    .right-card .socials-buttons {
+        display: none;
+    }
+
+    .left-card {
+        display: none;
+    }
 }
